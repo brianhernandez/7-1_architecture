@@ -1,0 +1,45 @@
+/*********************
+     Header Styles
+*********************/
+
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  video {
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+
+.header-content {
+  z-index: 2;
+  color: white;
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
+  p:last-of-type {
+    padding-bottom: 40px
+  }
+}

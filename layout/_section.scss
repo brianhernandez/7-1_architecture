@@ -1,0 +1,50 @@
+/*********************
+    Section Styles
+*********************/
+
+.section-1 {
+  @include flexible-content-area;
+  margin: 2em auto;
+
+  .benefits {
+    @include flexible-content-area;
+    padding: 10px;
+    width: 300px;
+
+    .benefits-img {
+      display: block;
+    }
+  }
+
+  .about-wrap {
+    @include flexible-content-area;
+    width: 400px;
+    padding: 20px;
+  }
+}
+
+.section-2 {
+  @include flexible-content-area;
+  padding: 2em 0;
+  background-color: rgba($tertiary-color, .5);
+  max-width: 100%;
+}
+
+.content-wrap {
+  @include flexible-content-area;
+  margin: 0 auto;
+
+  p {
+    max-width: 600px;
+    padding: 10px;
+  }
+
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.about-section {
+  margin: 8em auto 3em;
+}

@@ -1,0 +1,52 @@
+/*********************
+    Pricing Tables
+*********************/
+
+.pricing-table {
+  @include flexible-content-area;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 5em auto;
+
+  .pricing-header {
+    @include pricing-table-borders;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+    padding: 40px 0;
+    width: 300px;
+    text-align: center;
+
+  }
+
+  .basic {
+    background-color: rgba($primary-color, .4);
+  }
+
+  .plus {
+    background-color: rgba($secondary-color, .4);
+  }
+
+  .premium {
+    background-color: rgba($tertiary-color, .4);
+  }
+
+  .pricing-features {
+    @include pricing-table-borders;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0;
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+
+    li {
+      padding: 10px 0;
+    }
+
+    li:nth-child(odd) {
+      background-color: rgba($gray-color, .3);
+    }
+  }
+}

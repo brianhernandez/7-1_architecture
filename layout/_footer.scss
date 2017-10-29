@@ -1,0 +1,41 @@
+/*********************
+     Footer Styles
+*********************/
+
+footer {
+  background-color: $gray-color;
+  color: white;
+  padding: 30px 0;
+
+  a {
+    text-decoration: none;
+    color: white;
+    transition: color .3s;
+
+    &:hover,
+    &:focus {
+      color: $primary-color;
+    }
+}
+
+.footer-links {
+  list-style: none;
+  line-height: 1.4em;
+  padding-left: 0;
+  padding: 0 40px;
+  }
+}
+
+.site-author {
+  @include flexible-content-area;
+  max-width: 25%;
+
+  img {
+    width: 90px;
+    height: 90px;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,17 @@
+/*********************
+     Button Styles
+*********************/
+
+.my-button {
+  @include button;
+  border-color: white;
+  transition: background-color .3s,
+              border-color .3s;
+
+  &:hover,
+  &:focus {
+    background-color: darken($primary-color, 20%);
+    border-color: darken($primary-color, 20%);
+  }
+}
+

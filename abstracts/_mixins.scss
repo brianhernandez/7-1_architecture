@@ -1,0 +1,28 @@
+/*********************
+        Mixins
+*********************/
+
+@mixin button {
+  border-radius: $site-border-radius;
+  border-width: $site-border-width;
+  border-style: solid;
+  padding: 10px 10px;
+  color: white;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+@mixin flexible-content-area {
+  max-width: $site-content-width;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+@mixin pricing-table-borders {
+  border-radius: $site-border-radius;
+  border-width: $site-border-width;
+  border-color: $gray-color;
+  border-style: solid;
+}
